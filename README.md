@@ -13,4 +13,4 @@ For DB installation watch the following [video](https://youtu.be/fZQI7nBu32M)
 	* The Frontend code is located inside the client folder
 	* cd into the client 
 	* run the command yarn, to install all the packages
-	* run the command yarn dev,  to start the client server code learnt 
+	* run the command yarn dev,  to start the client server
