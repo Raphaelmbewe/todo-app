@@ -26,7 +26,7 @@ router.post("/signup", validate, async (req, res) => {
     );
 
     const token = jwtGenerator(newUser.rows[0].user_id);
-    res.json({ token });
+    res.json({ token, message: "Signed up successfully"  });
   } catch (err) {
     console.error(err.message);
     res.status(500).send("Server Error");
@@ -51,7 +51,7 @@ router.post("/login", validate, async (req, res) => {
       return res.status(401).json({ message: "Invalid credentials" });
     }
     const token = jwtGenerator(user.rows[0].user_id);
-    res.json({ token });
+    res.json({ token, message: "Logged in successfully"  });
   } catch (err) {
     console.error(err.message);
     res.status(500).send("Server Error");
