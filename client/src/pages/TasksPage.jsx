@@ -9,7 +9,6 @@ const TasksPage = () => {
   const [isOpen, setOpen] = useState(null);
   const { tasks, isLoading } = useSelector(taskSelector);
   const dispatch = useDispatch();
-  console.log("Tasks:", tasks);
   const accordionHandler = (index) => {
     setOpen(index === isOpen ? null : index);
   };

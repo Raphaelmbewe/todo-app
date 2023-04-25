@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import * as ReactDOMClient from 'react-dom/client'
 import { Provider } from 'react-redux';

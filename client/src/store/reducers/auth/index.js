@@ -23,7 +23,7 @@ const authSlice = createSlice({
     requestLoginSuccess(state, action) {
       state.isLoading = false;
       state.success = action?.payload?.response?.message;
-      state.login = action.payload.response;
+      state.login = action.payload.response.token;
     },
     requestLoginFailed(state, action) {
       state.isLoading = false;
@@ -37,7 +37,7 @@ const authSlice = createSlice({
     requestSignUpSuccess(state, action) {
       state.isLoading = false;
       state.success = action?.payload?.response?.message;
-      state.signup = action.payload.response;
+      state.signup = action.payload.response.token;
     },
     requestSignUpFailed(state, action) {
       state.isLoading = false;

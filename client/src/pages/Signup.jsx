@@ -63,7 +63,7 @@ const SignUp = () => {
     }
   }, [success, error]);
 
-  if (!isLoading && signup) {
+  if (signup) {
     return (
       <Navigate
       to={location.state?.from?.pathname || routeNames.dashboard.home}

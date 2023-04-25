@@ -14,7 +14,6 @@ const AppRoutes = () => {
       {/* Public */}
       <Route path={routeNames.landing} element={<Login />} />
       <Route path={routeNames.authentication.signup} element={<SignUp />} />
-      
       {/* Private */}
       <Route path={routeNames.dashboard.home} element={ <RequireAuth> <Layout /> </RequireAuth>}>
         <Route index element={<TasksPage />} />

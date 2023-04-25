@@ -44,7 +44,7 @@ const Login = () => {
       dispatch(clearAuth());
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     if (success) {
@@ -58,11 +58,11 @@ const Login = () => {
   }, [success, error]);
 
 
-  if (!isLoading && login) {
+  if (login) {
     return (
       <Navigate
-        to={location.state?.from?.pathname || routeNames.dashboard.home}
-        state={{ from: location }}
+      to={location.state?.from?.pathname || routeNames.dashboard.home}
+      state={{ from: location }}
         replace
       />
     );
