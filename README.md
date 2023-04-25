@@ -4,12 +4,12 @@
 ### Running the Backend
 	* The Backend code is located inside the server folder
 	* cd into the server 
-	* [For DB installation watch the following video:](https://youtu.be/fZQI7nBu32M)
+	* For DB installation watch the following [video](https://youtu.be/fZQI7nBu32M)
 	* Inside the server folder locate the file database.sql to see all the database setups and schemas 
 	* Get the .env credentials in the .env.example
 	* run the command yarn, to install all the packages
 	* run the command yarn dev,  to start the server
-
+For DB installation watch the following [video](https://youtu.be/fZQI7nBu32M)
 ### Running the Frontend
 	* The Frontend code is located inside the client folder
 	* cd into the client 
