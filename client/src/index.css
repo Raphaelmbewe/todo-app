@@ -1,0 +1,39 @@
+body{
+  background: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(157, 157, 154, 1) !important;
+  border-radius: 5rem !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+  background: rgb(241, 241, 239) !important;
+  border-radius: 5rem !important;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1.5em 1.5em;
+}
